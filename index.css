@@ -9,10 +9,20 @@
   position: relative;
   display: inline-block;
   transition: all 1s;
+  animation: 1s infinite alternate-reverse xxx;
 }
 
-.container:hover{
+/* .container:hover{
   transform: scale(1.2);
+} */
+
+@keyframes xxx{
+  0%{
+    transform: none;
+  }
+  100%{
+    transform: scale(1.2);
+  }
 }
 .container >.left{
   width: 50px;
